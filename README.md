@@ -1,4 +1,4 @@
-Source-Code-Inspection [![Build Status](https://travis-ci.org/Prof-Calebe/Source-Code-Inspection.svg?branch=master)](https://travis-ci.org/Prof-Calebe/Source-Code-Inspection)
+Ticket Machine - `CC8550` Simulação e Teste de Software
 ======================
 
-Link para o Travis-CI: https://travis-ci.org/Prof-Calebe/Source-Code-Inspection
+Link para a Wiki: https://github.com/Rafael-Sabugari/Source-Code-Inspection.wiki.git
