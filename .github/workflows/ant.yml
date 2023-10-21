@@ -5,7 +5,7 @@ name: Java CI
 
 on:
   push:
-    branches: [ "master", "feature/CI" ]
+    branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
 
