@@ -36,7 +36,7 @@
             <formatter type="plain" usefile="false" />
             <batchtest todir="${build.dir}">
                 <fileset dir="${test.dir}">
-                    <include name="**/*Test.java" />
+                    <include name="test/br/calebe/ticketmachine/core/*Test.java" />
                 </fileset>
             </batchtest>
         </junit>
