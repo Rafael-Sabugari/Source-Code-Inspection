@@ -13,7 +13,7 @@
 
     <junit printsummary="yes" haltonfailure="yes">
         <classpath>
-            <path refid="your.classpath.refid" />
+            <path refid="run.test.classpath" />
             <fileset dir="${junit.dir}">
                 <include name="**/junit.jar" />
             </fileset>
