@@ -10,6 +10,37 @@
 <project name="Source_Code_Inspection" default="default" basedir=".">
     <description>Builds, tests, and runs the project Source Code Inspection.</description>
     <import file="nbproject/build-impl.xml"/>
+
+    <property name="src.dir" value="src" />
+    <property name="test.dir" value="test" />
+    <property name="build.dir" value="../build" />
+
+    <path id="classpath">
+        <fileset dir="../lib">
+            <include name="*.jar" />
+        </fileset>
+        <pathelement location="${build.dir}" />
+    </path>
+
+    <target name="init">
+        <mkdir dir="${build.dir}" />
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="classpath" />
+    </target>
+
+    <target name="test" depends="compile">
+        <junit printsummary="yes" fork="true">
+            <classpath refid="classpath" />
+            <formatter type="plain" usefile="false" />
+            <batchtest todir="${build.dir}">
+                <fileset dir="${test.dir}">
+                    <include name="**/*Test.java" />
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
     <!--
 
     There exist several targets which are by default empty and which can be 
