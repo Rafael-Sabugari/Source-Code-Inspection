@@ -10,6 +10,15 @@
 <project name="Source_Code_Inspection" default="default" basedir=".">
     <description>Builds, tests, and runs the project Source Code Inspection.</description>
     <import file="nbproject/build-impl.xml"/>
+
+    <junit printsummary="yes" haltonfailure="yes">
+        <classpath>
+            <path refid="your.classpath.refid" />
+            <fileset dir="${junit.dir}">
+                <include name="**/junit.jar" />
+            </fileset>
+        </classpath>
+    </junit>
     <!--
 
     There exist several targets which are by default empty and which can be 
