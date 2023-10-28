@@ -44,7 +44,7 @@
     </target> -->
     <!-- Run jUnit -->
     <!-- Make sure these two libraries are included -->
-    <target name="junit" depends="resolve">
+    <target name="junit" depends="compile">
 
         <junit printsummary="yes" haltonfailure="no">
 
