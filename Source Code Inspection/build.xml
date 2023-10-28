@@ -49,7 +49,7 @@
 
         <junit printsummary="yes" haltonfailure="no">
 
-            
+            <classpath refid="lib.dir" />
             <classpath location="${build.dir}" />
                             
             <classpath location="lib/junit-4.11.jar" />
