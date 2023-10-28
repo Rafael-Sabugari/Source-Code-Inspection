@@ -31,17 +31,17 @@
         <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="classpath" />
     </target>
 
-    <!-- <target name="test" depends="compile">
+    <target name="test" depends="compile">
         <junit printsummary="yes" fork="true">
             <classpath refid="classpath" />
             <formatter type="plain" usefile="false" />
             <batchtest todir="${build.dir}">
-                <fileset dir="${test.dir}">
+                <fileset dir="${build.dir}">
                      <include name="**/*Test.java" /> 
                 </fileset>
             </batchtest>
         </junit>
-    </target> -->
+    </target>
     <!-- Run jUnit -->
     <!-- Make sure these two libraries are included -->
     <!-- <target name="junit" depends="resolve">
