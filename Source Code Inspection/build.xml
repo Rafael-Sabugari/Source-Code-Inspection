@@ -11,9 +11,9 @@
     <description>Builds, tests, and runs the project Source Code Inspection.</description>
     <import file="nbproject/build-impl.xml"/>
 
-    <property name="src.dir" value="src" />
-    <property name="test.dir" value="test" />
-    <property name="build.dir" value="build" />
+    <property name="src.dir" value="Source\ Code\ Inspection/src" />
+    <property name="test.dir" value="Source\ Code\ Inspection/test" />
+    <property name="build.dir" value="Source\ Code\ Inspection/build" />
 
     <path id="classpath">
         <fileset dir="../lib">
