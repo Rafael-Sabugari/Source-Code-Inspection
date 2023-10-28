@@ -1,8 +1,7 @@
-package br.calebe.ticketmachine.test;
+package br.calebe.ticketmachine.core;
 
 import br.calebe.ticketmachine.exception.PapelMoedaInvalidaException;
 import br.calebe.ticketmachine.exception.SaldoInsuficienteException;
-import br.calebe.ticketmachine.core.PapelMoeda;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
@@ -10,7 +9,7 @@ import org.junit.Test;
 public class TicketMachineTest {
     
     @Test
-    public void inserirTest() {
+    public void inserirTest() throws PapelMoedaInvalidaException {
         TicketMachine ticketMachine = new TicketMachine(10);
         ticketMachine.inserir(10);
         assertEquals(10, ticketMachine.getSaldo());
@@ -23,21 +22,21 @@ public class TicketMachineTest {
     }
 
     @Test
-    public void getSaldoTest() {
+    public void getSaldoTest() throws PapelMoedaInvalidaException {
         TicketMachine ticketMachine = new TicketMachine(10);
         ticketMachine.inserir(10);
         assertEquals(10, ticketMachine.getSaldo());
     }
 
     @Test
-    public void getSaldoWrongTest() {
+    public void getSaldoWrongTest() throws PapelMoedaInvalidaException {
         TicketMachine ticketMachine = new TicketMachine(10);
         ticketMachine.inserir(10);
         assertNotEquals(5, ticketMachine.getSaldo());
     }
 
     @Test
-    public void imprimirTest() {
+    public void imprimirTest() throws PapelMoedaInvalidaException, SaldoInsuficienteException {
         TicketMachine ticketMachine = new TicketMachine(10);
         ticketMachine.inserir(10);
         String result = ticketMachine.imprimir();

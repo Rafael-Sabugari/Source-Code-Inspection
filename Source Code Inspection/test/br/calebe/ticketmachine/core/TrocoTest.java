@@ -1,11 +1,8 @@
-package br.calebe.ticketmachine.test;
+package br.calebe.ticketmachine.core;
 
-import br.calebe.ticketmachine.exception.PapelMoedaInvalidaException;
-import br.calebe.ticketmachine.exception.SaldoInsuficienteException;
-import br.calebe.ticketmachine.core.Troco;
-import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import java.util.Iterator;
 
 public class TrocoTest {
 

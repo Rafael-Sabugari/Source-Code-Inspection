@@ -1,6 +1,5 @@
-package br.calebe.ticketmachine.test;
+package br.calebe.ticketmachine.core;
 
-import br.calebe.ticketmachine.core.PapelMoeda;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
