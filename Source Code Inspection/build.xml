@@ -31,7 +31,7 @@
         <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="classpath" />
     </target>
 
-    <target name="test" depends="compile">
+    <!-- <target name="test" depends="compile">
         <junit printsummary="yes" fork="true">
             <classpath refid="classpath" />
             <formatter type="plain" usefile="false" />
@@ -41,10 +41,10 @@
                 </fileset>
             </batchtest>
         </junit>
-    </target>
+    </target> -->
     <!-- Run jUnit -->
     <!-- Make sure these two libraries are included -->
-    <!-- <target name="junit" depends="resolve">
+    <target name="junit" depends="resolve">
 
         <junit printsummary="yes" haltonfailure="no">
 
@@ -61,7 +61,7 @@
             </test>
 
         </junit>
-    </target> -->
+    </target>
     <!--
     There exist several targets which are by default empty and which can be 
     used for execution of your tasks. These targets are usually executed 
