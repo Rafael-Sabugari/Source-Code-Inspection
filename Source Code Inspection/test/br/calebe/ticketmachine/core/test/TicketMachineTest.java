@@ -1,11 +1,12 @@
-package br.calebe.ticketmachine.core;
+package br.calebe.ticketmachine.core.test;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+
+import org.junit.Test;
+import br.calebe.ticketmachine.core.TicketMachine;
 import br.calebe.ticketmachine.exception.PapelMoedaInvalidaException;
 import br.calebe.ticketmachine.exception.SaldoInsuficienteException;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertEquals;
-import org.junit.Test;
-
 public class TicketMachineTest {
     
     @Test

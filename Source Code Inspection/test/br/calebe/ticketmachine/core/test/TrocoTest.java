@@ -1,9 +1,11 @@
-package br.calebe.ticketmachine.core;
+package br.calebe.ticketmachine.core.test;
+
+import java.util.Iterator;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
-import java.util.Iterator;
-
+import br.calebe.ticketmachine.core.Troco;
+import br.calebe.ticketmachine.core.PapelMoeda;
 public class TrocoTest {
 
     @Test
