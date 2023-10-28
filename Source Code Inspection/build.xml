@@ -10,7 +10,7 @@
 <project name="Source_Code_Inspection" default="default" basedir=".">
     <description>Builds, tests, and runs the project Source Code Inspection.</description>
     <import file="nbproject/build-impl.xml"/>
-    
+
     <property name="src.dir" value="src" />
     <property name="test.dir" value="test" />
     <property name="build.dir" value="build" />
@@ -31,17 +31,17 @@
         <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="classpath" />
     </target>
 
-    <target name="test" depends="compile">
+    <!-- <target name="test" depends="compile">
         <junit printsummary="yes" fork="true">
             <classpath refid="classpath" />
             <formatter type="plain" usefile="false" />
             <batchtest todir="${build.dir}">
                 <fileset dir="${test.dir}">
-                    <!-- <include name="**/*Test.java" /> -->
+                     <include name="**/*Test.java" /> 
                 </fileset>
             </batchtest>
         </junit>
-    </target>
+    </target> -->
     <!-- Run jUnit -->
     <!-- Make sure these two libraries are included -->
     <!-- <target name="junit" depends="resolve">
